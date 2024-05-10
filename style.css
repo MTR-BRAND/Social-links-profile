@@ -1,0 +1,113 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--OffBlack);
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.box_card{
+    width: 385px;
+    height: 600px;
+    background-color: var(--DarkGrey);
+    border-radius: 10px;
+
+    .card{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        & img{
+            width: 90px;
+            height: 90px;
+            margin: 44px auto;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+
+       & h2{
+        font-size: 24px;
+       }
+
+       & h4{
+        font-size: 14px;
+        padding-top: 14px;
+        padding-bottom: 25px;
+        color: var(--Green);
+       }
+
+       & p{
+        font-size: 14px;
+        /* padding-bottom: 20px; */
+       }
+
+    }
+
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+
+        & button{
+            width: 304px;
+            height: 44px;
+            margin-bottom: 15px;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+            background-color: var(--Grey);
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.5s ease-in;
+        }
+
+        & button:hover{
+            background-color: var(--Green);
+            color: black;
+        }
+    }
+
+
+}
+
+.copyright{
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+
+    & a{
+        font-family: "Poetsen One", sans-serif;
+        color: var(--Green);
+        font-weight: 500;
+    }
+}
+
